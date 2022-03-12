@@ -1,0 +1,231 @@
+.converter-container {
+    width: 100%;
+    min-height: 90vh;
+    overflow: hide;
+}
+
+.converter-headline-container {
+    width: 100%;
+    min-height: 45vh;
+    display:flex;
+    align-items: center;
+}
+
+.converter-elements-container-1 {
+    width: 100%;
+    min-height: 45vh;
+    background-color: #353535;
+    
+}
+
+
+.converter-desktop {
+    height: 800px;
+    width: 1280px;
+  }
+.converter {
+    height: 128px;
+    width: 905px;
+  }
+.input-field {
+    height: 64px;
+    width: 200px;
+  }
+.converter-headline {
+    height: 47px;
+    width: 571px;
+    color: #FFF;
+    font-family: Roboto !important;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+    text-align: center;
+    margin-left: 6rem;
+  }
+  
+.hatch-studio-logo-combination- {
+    height: 25px;
+    width: 123.15px;
+}
+
+.converter-elements-container-2 {
+}
+.converter-inputs-container{
+
+
+
+}
+
+.converter-button-container{
+  margin-top: 17px;
+}
+
+.converter-elements-row1-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-evenly;
+    height: 128px;
+    width: 905px;
+    border-radius: 15px;
+    background-color: #353535;
+    box-shadow: 0 0 50px 0 rgba(0,0,0,0.2);
+    POSITION: RELATIVE;
+    bottom: 50px;
+    left: 60px;   
+}
+
+.converter-elements-row2-container {
+height: 78px;
+width: 237px;
+margin-left: 110px;
+}
+.result-input {
+    height: 23px;
+    min-width: 69px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 20px;
+    line-height: 23px;
+  }
+.result-output {
+    height: 47px;
+    min-width: 237px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+  }
+.switcher {
+    height: 12px;
+    width: 12px;
+    margin-top: 67px;
+}
+.button-style{
+    height: 40px;
+  width: 117px;
+  border-radius: 8px;
+  background-color: #F3FF0A;
+  margin-top: 35px;
+  border: none;
+}
+.button-value {
+    height: 19px;
+    width: 57px;
+    color: #1A1A1A;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+  }
+#input-style{
+  height: 38px;
+  width: 200px;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 19px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255,255,255,0.08);
+  
+}
+.dropdown-style{
+    height: 40px;
+  width: 200px;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 40px;
+  border-radius: 8px;
+  background-color: rgba(255,255,255,0.08);
+  text-align: left;
+  
+}
+.dropdown {
+    height: 64px;
+    width: 200px;
+    margin-top: 35px;
+  }
+  .dropdown-arrow-style {
+    box-sizing: border-box;
+    height: 6px;
+    width: 12px;
+    border: 2px solid #FFF;
+  }
+
+  /* do not group these rules */
+*::-webkit-input-placeholder {
+    height: 19px;
+  width: 32px;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 19px;
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    height: 19px;
+    width: 32px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 19px;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    height: 19px;
+  width: 32px;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 19px;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    height: 19px;
+  width: 32px;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 19px;
+}
+*::-ms-input-placeholder {
+    /* Microsoft Edge */
+    height: 19px;
+  width: 32px;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 19px;
+}
+*::placeholder {
+    /* modern browser */
+    height: 19px;
+  width: 32px;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 19px;
+
+}
+.name {
+    height: 14px;
+    width: 43px;
+    color: #C6C6C6;
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .button-view-history {
+    position: absolute;
+    top: 70px;
+    left: 1020px;
+    height: 14px;
+    width: 136px;
+    opacity: 0.5;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 14px;
+  }
