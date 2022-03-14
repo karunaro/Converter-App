@@ -3,13 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Inspect from 'inspx';
 
 
 ReactDOM.render(
   <React.StrictMode>
- 
+ <Inspect>
     <App />
-    
+    </Inspect>
   </React.StrictMode>,
   document.getElementById('root')
 );

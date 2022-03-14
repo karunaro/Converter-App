@@ -5,6 +5,7 @@ import Dropdown from 'react-dropdown';
 import './Converter.css';
 import switcher from './../assets/Switcher.png';
 import { Link } from "react-router-dom";
+import swal from 'sweetalert'
 
 function Converter() {
 
@@ -25,6 +26,7 @@ function Converter() {
     // }, [info])
     // Function to convert the currency
     async function convert() {
+        if (input > 0){
         const req ={fromCurrency:from,toCurrency:to,amountToConvert:input};
         console.log(req);
         
@@ -34,6 +36,10 @@ function Converter() {
            
         setOutput(data.data.value);
              }).catch( (err) => console.log(err) )
+            }
+            else {
+                swal ('','Please enter a valide amount',"info");
+            }
         
     }
     // Function to switch between two currency
