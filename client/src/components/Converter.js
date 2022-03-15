@@ -7,24 +7,23 @@ import switcher from './../assets/Switcher.png';
 import { Link } from "react-router-dom";
 import swal from 'sweetalert'
 
+
 function Converter() {
 
     
-    const [input, setInput] = useState(0);
+    const [input, setInput] = useState(1);
     const [from, setFrom] = useState("EUR");
     const [to, setTo] = useState("USD");
     
     const options = ['USD','EUR','CHF']
-    const [output, setOutput] = useState(0);
+    const [output, setOutput] = useState();
     
-    // Calling the convert function whenever
-    // a user switches the currency
-    // useEffect(() => {
-    //     setOptions(Object.keys(info));
-    //     convert();
-    //     console.log(options);
-    // }, [info])
-    // Function to convert the currency
+   
+     useEffect(() => {
+         
+         convert();
+         
+     }, [from,to])   
     async function convert() {
         if (input > 0){
         const req ={fromCurrency:from,toCurrency:to,amountToConvert:input};
@@ -42,12 +41,12 @@ function Converter() {
             }
         
     }
-    // Function to switch between two currency
+    
     function flip() {
         var temp = from;
         setFrom(to);
         setTo(temp);
-        convert();
+        
     }
     return (
         <div className="converter-container">
@@ -63,7 +62,7 @@ function Converter() {
                         <div className="converter-inputs-container">
                             <div className="dropdown">
                                 <label className="name">Amount
-                                    <input id="input-style" type="text" placeholder="0" onChange={(e) => setInput(e.target.value)} />
+                                    <input id="input-style" type="text" placeholder="1" onChange={(e) => setInput(e.target.value)} />
                                 </label>
                             </div>
                         </div>
