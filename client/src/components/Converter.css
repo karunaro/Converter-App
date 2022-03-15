@@ -64,14 +64,14 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content:space-evenly;
-    height: 128px;
-    width: 905px;
+    height: 19vh;
+    width: 70%;
     border-radius: 15px;
     background-color: #353535;
     box-shadow: 0 0 50px 0 rgba(0,0,0,0.2);
     POSITION: RELATIVE;
-    bottom: 50px;
-    left: 60px;   
+    bottom: 8vh;
+    left: 6%;   
 }
 
 .converter-elements-row2-container {

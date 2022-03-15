@@ -70,7 +70,7 @@ function Converter() {
                         <div className="converter-inputs-container">
                             <div className="dropdown">
                                 <label className="name">From
-                                    <Dropdown className="dropdown-style" options={options}
+                                    <Dropdown  className="dropdown-style"  options={options}
                                         onChange={(e) => { setFrom(e.value) }}
                                         value={from} placeholder="From" />
                                 </label>

@@ -24,8 +24,9 @@ await databaseConnection();
 StartDb();
 app.post('/convert', async(req,res)=>{
      const { fromCurrency,toCurrency,amountToConvert } = req.body;
-     console.log(req+"dad"+req.body);
+     
         try {
+            
             
             const Value = await service.Convert({fromCurrency,toCurrency,amountToConvert});
             await service.saveConversion({fromCurrency,toCurrency,amountToConvert,Value});
@@ -55,5 +56,5 @@ app.post('/convert', async(req,res)=>{
 
 const port = process.env.PORT || 3000;
 app.listen(port,()=> console.log('listening.......'));
-
+module.exports = app;
 
